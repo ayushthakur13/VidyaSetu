@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #0a2b7e;
+    background: linear-gradient(90deg, #5fa9e9, #de83c9);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0a2b7e;
+    color: white;
+}
+
+.logo {
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-image {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.dropdown a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #0a2b7e;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.dropdown-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; 
+}
+
+.dropdown a:hover {
+    background-color: #eaeaeb;
+}
+
+.welcome-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-section h1 {
+    font-size: 2.2em;
+    color: #0a2b7e;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1em;
+    color: #333;
+}
+
+.group-options,
+.qa-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.option-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.option-card h2 {
+    font-size: 1.6em;
+    color: #0a2b7e;
+    margin-bottom: 15px;
+}
+
+.option-card p {
+    font-size: 0.95em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.option-card button {
+    padding: 10px 20px;
+    background-color: #0a2b7e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option-card button:hover {
+    background-color: #0d3c9b;
+}
+
+/* New Section: Featured Questions */
+.featured-content {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.featured-content h2 {
+    font-size: 1.8em;
+    color: #0a2b7e;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#featured-questions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#featured-questions-list li {
+    font-size: 1em;
+    color: #333;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#featured-questions-list li:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Latest Activities Section */
+.latest-activities {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.latest-activities h2 {
+    font-size: 1.8em;
+    color: #0a2b7e;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.latest-activities p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Make the sections more compact and clean */
+.featured-content,
+.latest-activities {
+    padding: 25px 20px;
+    max-width: 650px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #0a2b7e;
+    color: #90caf9;
+    padding: 40px 20px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.website-name p {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9em;
+}
+
+.footer-links a {
+    color: #90caf9;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    font-size: 0.8em;
+    color: #90caf9;
+    margin-top: 10px;
+}

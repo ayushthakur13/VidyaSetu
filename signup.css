@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #0a2b7e;
+    background: linear-gradient(90deg, #5fa9e9, #de83c9);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0a2b7e;
+    color: white;
+}
+
+.logo {
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-image {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s;
+}
+
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    background: linear-gradient(135deg, #5fa9e9, #de83c9);
+    
+}
+
+.registration-box {
+    background-color: #edededad;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.registration-box h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+    padding: 0.5rem 1.5rem;
+}
+
+.registration-box input[type="text"],
+.registration-box input[type="email"],
+.registration-box input[type="password"],
+.registration-box input[type="date"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dddddd55;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.795);
+    color: #131212;
+    font-size: 1rem;
+    outline: none;
+}
+
+.registration-box button {
+    padding: 0.8rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #3a35c4ef, #d14a829c);
+    color: #faf8f8;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.registration-box button:hover {
+    background: linear-gradient(45deg, #22b2c8cc, #d14a82e4);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.registration-box .login-link {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    color: #333;
+}

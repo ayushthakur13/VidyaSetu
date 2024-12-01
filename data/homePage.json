@@ -1,0 +1,22 @@
+{
+    "featuredQuestions": [
+        {
+            "title": "How to start a study group?",
+            "description": "Here are some tips to get started with creating a study group..."
+        },
+        {
+            "title": "What are the best resources for learning JavaScript?",
+            "description": "Here are some recommendations for learning JavaScript effectively..."
+        }
+    ],
+    "latestActivities": [
+        {
+            "activityName": "New Study Group Created",
+            "activityDescription": "A new study group on Web Development was created today."
+        },
+        {
+            "activityName": "Question Answered",
+            "activityDescription": "A new answer was posted to the question about Data Structures."
+        }
+    ]
+}

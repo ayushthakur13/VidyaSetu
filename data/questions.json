@@ -1,0 +1,6 @@
+{
+    "questions": [
+        { "id": 1, "question": "What is Web?" },
+        { "id": 2, "question": "What is HTML?" }
+    ]
+}

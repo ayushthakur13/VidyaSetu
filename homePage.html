@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidyaSetu - Home</title>
+    <link rel="stylesheet" href="homePage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" style="color: white; text-decoration: none;">VidyaSetu</a>
+        </div>
+        <div class="profile-icon">
+            <img src="images/menu_icon.png" alt="Profile" class="profile-image">
+            <div class="dropdown">
+                <a href="profile.html">
+                    <img src="images/profile_icon.png" alt="Profile" class="dropdown-icon"> Profile
+                </a>
+            </div>
+        </div>
+    </header>
+        
+    <main>
+        <section class="welcome-section">
+            <h1 id="welcome-message">Welcome Back, User!</h1>
+            <p>Explore, connect, and learn with VidyaSetu.</p>
+        </section>
+    
+        <section class="group-options">
+            <div class="option-card">
+                <h2>Create a Group</h2>
+                <p>Start your own study group and invite others to join.</p>
+                <button onclick="window.location.href='createGroup.html'">Create Group</button>
+            </div>
+            <div class="option-card">
+                <h2>Join a Group</h2>
+                <p>Find and join a group that matches your interests.</p>
+                <button onclick="window.location.href='joinGroup.html'">Join Group</button>
+            </div>
+        </section>
+    
+        <section class="qa-options">
+            <div class="option-card">
+                <h2>Ask a Question</h2>
+                <p>Got doubts? Ask and get answers from peers.</p>
+                <button onclick="window.location.href='askQues.html'">Ask Question</button>
+            </div>
+            <div class="option-card">
+                <h2>Answer Questions</h2>
+                <p>Help others by answering their questions.</p>
+                <button onclick="window.location.href='giveAns.html'">Answer Questions</button>
+            </div>
+        </section>
+
+        <section class="featured-content">
+            <h2>Featured Questions</h2>
+            <ul id="featured-questions-list">
+            </ul>
+        </section>
+
+        <section class="latest-activities">
+            <h2>Latest Activities</h2>
+            <div id="latest-activities">
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="website-name">
+                <p>VidyaSetu</p>
+            </div>
+
+            <div class="copyright">
+                <p>© 2024 VidyaSetu. All rights reserved.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a> |
+                <a href="terms.html">Terms & Conditions</a> |
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="homePage.js"></script>
+</body>
+</html>

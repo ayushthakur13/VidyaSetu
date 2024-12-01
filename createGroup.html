@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidyaSetu - Create Group</title>
+    <link rel="stylesheet" href="createGroup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" style="color: white; text-decoration: none;">VidyaSetu</a>
+        </div>
+        <div class="profile-icon">
+            <img src="images/menu_icon.png" alt="Profile" class="profile-image">
+            <div class="dropdown">
+                <a href="homePage.html">
+                    <img src="images/homepage_icon.png" alt="Home" class="dropdown-icon"> Home
+                </a>
+                <a href="profile.html">
+                    <img src="images/profile_icon.png" alt="Profile" class="dropdown-icon"> Profile
+                </a>
+            </div>
+        </div>
+    </header>    
+    
+    <main>
+        <div class="form-container">
+            <h2>Create a Group</h2>
+            <hr class="separator">
+            <p class="sub-description">Fill out the form below to create a study group.</p>
+            
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="group-name">Group Name</label>
+                    <input type="text" id="group-name" name="group-name" placeholder="Enter group name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter the subject to study" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="topc">Topic</label>
+                    <input type="text" id="topic" name="topic" placeholder="Enter the topic to focus" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="members-count">Number of Members</label>
+                    <input type="number" id="members-count" name="members-count" placeholder="Enter number of members" required>
+                </div>
+    
+                <button type="submit" class="submit-btn">Create Group</button>
+            </form>
+        </div>
+    
+        <div class="extra-content">
+            <p class="info-text">* Make sure your group is specific and relevant to the subject of study for a better learning experience!</p>
+        </div>
+    </main>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <div class="website-name">
+                <p>VidyaSetu</p>
+            </div>
+            <div class="copyright">
+                <p>© 2024 VidyaSetu. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a> |
+                <a href="terms.html">Terms & Conditions</a> |
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="createGroup.js"></script>
+</body>
+</html>
